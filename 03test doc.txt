@@ -1,0 +1,11 @@
+run the html alone
+this page getting films name and description from some other site in json format and dissplay on ui through java scripting 
+we may use jquery too instead of javascript.
+
+
+$(document).ready(function () {
+  $.getJSON('data.json', function (data) {
+    // begin accessing JSON data here
+    console.log(data[0].name)
+  })
+})
